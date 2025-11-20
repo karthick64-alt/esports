@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - eSports Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">🎮 eSports Portal</a>
+                <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tournaments.html">Tournaments</a></li>
+                        <li><a href="gallery.html" style="color: var(--primary-color);">Gallery</a></li>
+                        <li><a href="blog.html">News</a></li>
+                        <li><a href="login.html" class="btn btn-secondary">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Gallery Hero -->
+    <section class="hero" style="min-height: 50vh;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Gallery</h1>
+                <p>Game images, highlights, and clips</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="section" style="padding-top: 2rem; padding-bottom: 2rem; background: rgba(0, 255, 136, 0.05);">
+        <div class="container">
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+                <a href="gallery.html" class="btn btn-primary">All</a>
+                <a href="gallery.html?type=highlights" class="btn btn-secondary">Highlights</a>
+                <a href="gallery.html?type=images" class="btn btn-secondary">Images</a>
+                <a href="gallery.html?type=clips" class="btn btn-secondary">Clips</a>
+                <a href="gallery.html?game=valorant" class="btn btn-secondary">Valorant</a>
+                <a href="gallery.html?game=cs2" class="btn btn-secondary">CS2</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="blog-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                <div class="blog-card">
+                    <img src="https://via.placeholder.com/400x300/667eea/ffffff?text=EPIC+CLUTCH" alt="Highlight">
+                    <div class="blog-card-content">
+                        <h3>Epic Clutch Play</h3>
+                        <p style="color: var(--gray-text);">Team Alpha - Valorant Championship</p>
+                        <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                            <span class="badge badge-primary">Highlight</span>
+                            <span class="badge badge-secondary">Valorant</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="https://via.placeholder.com/400x300/764ba2/ffffff?text=TEAM+FIGHT" alt="Highlight">
+                    <div class="blog-card-content">
+                        <h3>Amazing Team Fight</h3>
+                        <p style="color: var(--gray-text);">Team Beta - CS2 Pro League</p>
+                        <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                            <span class="badge badge-primary">Highlight</span>
+                            <span class="badge badge-secondary">CS2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="https://via.placeholder.com/400x300/ff3366/ffffff?text=ACE+PLAY" alt="Highlight">
+                    <div class="blog-card-content">
+                        <h3>Ace Play</h3>
+                        <p style="color: var(--gray-text);">Team Gamma - League of Legends</p>
+                        <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                            <span class="badge badge-danger">Clip</span>
+                            <span class="badge badge-secondary">LoL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="https://via.placeholder.com/400x300/0099ff/ffffff?text=TOURNAMENT+MOMENT" alt="Image">
+                    <div class="blog-card-content">
+                        <h3>Championship Moment</h3>
+                        <p style="color: var(--gray-text);">Dota 2 Championship 2024</p>
+                        <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                            <span class="badge badge-primary">Image</span>
+                            <span class="badge badge-secondary">Dota 2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="https://via.placeholder.com/400x300/00ff88/000000?text=HIGHLIGHT+REEL" alt="Highlight">
+                    <div class="blog-card-content">
+                        <h3>Top 5 Plays</h3>
+                        <p style="color: var(--gray-text);">Best Moments from Spring Cup</p>
+                        <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                            <span class="badge badge-primary">Highlight</span>
+                            <span class="badge badge-secondary">Compilation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="https://via.placeholder.com/400x300/9d4edd/ffffff?text=GAME+ACTION" alt="Image">
+                    <div class="blog-card-content">
+                        <h3>Intense Action</h3>
+                        <p style="color: var(--gray-text);">Overwatch 2 League Finals</p>
+                        <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                            <span class="badge badge-primary">Image</span>
+                            <span class="badge badge-secondary">Overwatch 2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="stream-embed" style="padding-bottom: 56.25%;">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3>Highlight Reel</h3>
+                        <p style="color: var(--gray-text);">Best plays from March tournaments</p>
+                        <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                            <span class="badge badge-danger">Video</span>
+                            <span class="badge badge-secondary">Highlights</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="stream-embed" style="padding-bottom: 56.25%;">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3>Tournament Recap</h3>
+                        <p style="color: var(--gray-text);">Complete coverage of Championship Finals</p>
+                        <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                            <span class="badge badge-danger">Video</span>
+                            <span class="badge badge-secondary">Recap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="https://via.placeholder.com/400x300/667eea/ffffff?text=PLAYER+MOMENT" alt="Image">
+                    <div class="blog-card-content">
+                        <h3>Player Celebration</h3>
+                        <p style="color: var(--gray-text);">Team Alpha after Championship win</p>
+                        <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                            <span class="badge badge-primary">Image</span>
+                            <span class="badge badge-secondary">Valorant</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="streaming.html">Streams</a></li>
+                        <li><a href="blog.html">News</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 eSports Portal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-top" onclick="scrollToTop()" style="display: none; position: fixed; bottom: 30px; right: 30px; background: var(--primary-color); color: var(--darker-bg); border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 1.5rem; cursor: pointer; z-index: 999; box-shadow: var(--shadow);">↑</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

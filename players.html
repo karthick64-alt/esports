@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players - eSports Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">🎮 eSports Portal</a>
+                <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="teams.html">Teams</a></li>
+                        <li><a href="players.html" style="color: var(--primary-color);">Players</a></li>
+                        <li><a href="leaderboard.html">Leaderboard</a></li>
+                        <li><a href="blog.html">News</a></li>
+                        <li><a href="login.html" class="btn btn-secondary">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Players Hero -->
+    <section class="hero" style="min-height: 50vh;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Professional Players</h1>
+                <p>Meet the best players in competitive eSports</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Players Grid -->
+    <section class="section">
+        <div class="container">
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; margin-bottom: 3rem;">
+                <a href="players.html" class="btn btn-primary">All Players</a>
+                <a href="players.html?game=valorant" class="btn btn-secondary">Valorant</a>
+                <a href="players.html?game=cs2" class="btn btn-secondary">CS2</a>
+                <a href="players.html?game=lol" class="btn btn-secondary">League of Legends</a>
+            </div>
+
+            <div class="games-grid">
+                <div class="game-card" style="text-align: center;">
+                    <img src="https://via.placeholder.com/200x200/667eea/ffffff?text=Player+1" alt="Player" style="width: 150px; height: 150px; border-radius: 50%; margin: 0 auto 1rem; border: 3px solid var(--primary-color);">
+                    <h3>Player1</h3>
+                    <p style="color: var(--primary-color);">Team Alpha</p>
+                    <p style="color: var(--gray-text); margin: 0.5rem 0;"><strong>Game:</strong> Valorant</p>
+                    <p style="color: var(--gray-text); margin: 0.5rem 0;"><strong>K/D:</strong> 1.45</p>
+                    <p style="color: var(--gray-text); margin: 0.5rem 0;"><strong>Rank:</strong> #1</p>
+                    <a href="player-profile.html" class="btn btn-primary" style="margin-top: 1rem;">View Profile</a>
+                </div>
+                <div class="game-card" style="text-align: center;">
+                    <img src="https://via.placeholder.com/200x200/764ba2/ffffff?text=Player+2" alt="Player" style="width: 150px; height: 150px; border-radius: 50%; margin: 0 auto 1rem; border: 3px solid var(--secondary-color);">
+                    <h3>Player2</h3>
+                    <p style="color: var(--secondary-color);">Team Beta</p>
+                    <p style="color: var(--gray-text); margin: 0.5rem 0;"><strong>Game:</strong> CS2</p>
+                    <p style="color: var(--gray-text); margin: 0.5rem 0;"><strong>K/D:</strong> 1.38</p>
+                    <p style="color: var(--gray-text); margin: 0.5rem 0;"><strong>Rank:</strong> #2</p>
+                    <a href="player-profile.html" class="btn btn-primary" style="margin-top: 1rem;">View Profile</a>
+                </div>
+                <div class="game-card" style="text-align: center;">
+                    <img src="https://via.placeholder.com/200x200/ff3366/ffffff?text=Player+3" alt="Player" style="width: 150px; height: 150px; border-radius: 50%; margin: 0 auto 1rem; border: 3px solid var(--accent-red);">
+                    <h3>Player3</h3>
+                    <p style="color: var(--accent-red);">Team Gamma</p>
+                    <p style="color: var(--gray-text); margin: 0.5rem 0;"><strong>Game:</strong> League of Legends</p>
+                    <p style="color: var(--gray-text); margin: 0.5rem 0;"><strong>K/D:</strong> 1.58</p>
+                    <p style="color: var(--gray-text); margin: 0.5rem 0;"><strong>Rank:</strong> #3</p>
+                    <a href="player-profile.html" class="btn btn-primary" style="margin-top: 1rem;">View Profile</a>
+                </div>
+                <div class="game-card" style="text-align: center;">
+                    <img src="https://via.placeholder.com/200x200/0099ff/ffffff?text=Player+4" alt="Player" style="width: 150px; height: 150px; border-radius: 50%; margin: 0 auto 1rem; border: 3px solid var(--secondary-color);">
+                    <h3>Player4</h3>
+                    <p style="color: var(--secondary-color);">Team Delta</p>
+                    <p style="color: var(--gray-text); margin: 0.5rem 0;"><strong>Game:</strong> Dota 2</p>
+                    <p style="color: var(--gray-text); margin: 0.5rem 0;"><strong>K/D:</strong> 1.32</p>
+                    <p style="color: var(--gray-text); margin: 0.5rem 0;"><strong>Rank:</strong> #4</p>
+                    <a href="player-profile.html" class="btn btn-primary" style="margin-top: 1rem;">View Profile</a>
+                </div>
+                <div class="game-card" style="text-align: center;">
+                    <img src="https://via.placeholder.com/200x200/00ff88/000000?text=Player+5" alt="Player" style="width: 150px; height: 150px; border-radius: 50%; margin: 0 auto 1rem; border: 3px solid var(--primary-color);">
+                    <h3>Player5</h3>
+                    <p style="color: var(--primary-color);">Team Echo</p>
+                    <p style="color: var(--gray-text); margin: 0.5rem 0;"><strong>Game:</strong> Valorant</p>
+                    <p style="color: var(--gray-text); margin: 0.5rem 0;"><strong>K/D:</strong> 1.42</p>
+                    <p style="color: var(--gray-text); margin: 0.5rem 0;"><strong>Rank:</strong> #5</p>
+                    <a href="player-profile.html" class="btn btn-primary" style="margin-top: 1rem;">View Profile</a>
+                </div>
+                <div class="game-card" style="text-align: center;">
+                    <img src="https://via.placeholder.com/200x200/9d4edd/ffffff?text=Player+6" alt="Player" style="width: 150px; height: 150px; border-radius: 50%; margin: 0 auto 1rem; border: 3px solid var(--accent-purple);">
+                    <h3>Player6</h3>
+                    <p style="color: var(--accent-purple);">Team Foxtrot</p>
+                    <p style="color: var(--gray-text); margin: 0.5rem 0;"><strong>Game:</strong> CS2</p>
+                    <p style="color: var(--gray-text); margin: 0.5rem 0;"><strong>K/D:</strong> 1.28</p>
+                    <p style="color: var(--gray-text); margin: 0.5rem 0;"><strong>Rank:</strong> #6</p>
+                    <a href="player-profile.html" class="btn btn-primary" style="margin-top: 1rem;">View Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="teams.html">Teams</a></li>
+                        <li><a href="players.html">Players</a></li>
+                        <li><a href="leaderboard.html">Leaderboard</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 eSports Portal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-top" onclick="scrollToTop()" style="display: none; position: fixed; bottom: 30px; right: 30px; background: var(--primary-color); color: var(--darker-bg); border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 1.5rem; cursor: pointer; z-index: 999; box-shadow: var(--shadow);">↑</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

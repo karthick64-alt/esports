@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard - eSports Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">🎮 eSports Portal</a>
+                <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tournaments.html">Tournaments</a></li>
+                        <li><a href="teams.html">Teams</a></li>
+                        <li><a href="players.html">Players</a></li>
+                        <li><a href="leaderboard.html" style="color: var(--primary-color);">Leaderboard</a></li>
+                        <li><a href="blog.html">News</a></li>
+                        <li><a href="login.html" class="btn btn-secondary">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Leaderboard Hero -->
+    <section class="hero" style="min-height: 50vh;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Global Leaderboard</h1>
+                <p>Rankings, Points, and Win Rates</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leaderboard Filters -->
+    <section class="section" style="padding-top: 2rem; padding-bottom: 2rem; background: rgba(0, 255, 136, 0.05);">
+        <div class="container">
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+                <a href="leaderboard.html?type=teams" class="btn btn-primary">Teams</a>
+                <a href="leaderboard.html?type=players" class="btn btn-secondary">Players</a>
+                <a href="leaderboard.html?game=valorant" class="btn btn-secondary">Valorant</a>
+                <a href="leaderboard.html?game=cs2" class="btn btn-secondary">CS2</a>
+                <a href="leaderboard.html?game=lol" class="btn btn-secondary">League of Legends</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leaderboard Table -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Top Teams</h2>
+            <div class="leaderboard">
+                <div class="leaderboard-item" style="background: rgba(255, 215, 0, 0.1); border: 2px solid #ffd700;">
+                    <div class="rank gold" style="font-size: 1.5rem;">1</div>
+                    <div>
+                        <strong>Team Alpha</strong>
+                        <div style="font-size: 0.9rem; color: var(--gray-text);">Valorant</div>
+                    </div>
+                    <div>
+                        <strong>12,450</strong>
+                        <div style="font-size: 0.9rem; color: var(--gray-text);">Points</div>
+                    </div>
+                    <div>
+                        <strong>85%</strong>
+                        <div style="font-size: 0.9rem; color: var(--gray-text);">Win Rate</div>
+                    </div>
+                    <div>
+                        <a href="team-details.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">View</a>
+                    </div>
+                </div>
+                <div class="leaderboard-item" style="background: rgba(192, 192, 192, 0.1); border: 2px solid #c0c0c0;">
+                    <div class="rank silver" style="font-size: 1.5rem;">2</div>
+                    <div>
+                        <strong>Team Beta</strong>
+                        <div style="font-size: 0.9rem; color: var(--gray-text);">CS2</div>
+                    </div>
+                    <div>
+                        <strong>11,890</strong>
+                        <div style="font-size: 0.9rem; color: var(--gray-text);">Points</div>
+                    </div>
+                    <div>
+                        <strong>82%</strong>
+                        <div style="font-size: 0.9rem; color: var(--gray-text);">Win Rate</div>
+                    </div>
+                    <div>
+                        <a href="team-details.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">View</a>
+                    </div>
+                </div>
+                <div class="leaderboard-item" style="background: rgba(205, 127, 50, 0.1); border: 2px solid #cd7f32;">
+                    <div class="rank bronze" style="font-size: 1.5rem;">3</div>
+                    <div>
+                        <strong>Team Gamma</strong>
+                        <div style="font-size: 0.9rem; color: var(--gray-text);">League of Legends</div>
+                    </div>
+                    <div>
+                        <strong>11,520</strong>
+                        <div style="font-size: 0.9rem; color: var(--gray-text);">Points</div>
+                    </div>
+                    <div>
+                        <strong>79%</strong>
+                        <div style="font-size: 0.9rem; color: var(--gray-text);">Win Rate</div>
+                    </div>
+                    <div>
+                        <a href="team-details.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">View</a>
+                    </div>
+                </div>
+                <div class="leaderboard-item">
+                    <div class="rank">4</div>
+                    <div>
+                        <strong>Team Delta</strong>
+                        <div style="font-size: 0.9rem; color: var(--gray-text);">Dota 2</div>
+                    </div>
+                    <div>
+                        <strong>10,890</strong>
+                        <div style="font-size: 0.9rem; color: var(--gray-text);">Points</div>
+                    </div>
+                    <div>
+                        <strong>73%</strong>
+                        <div style="font-size: 0.9rem; color: var(--gray-text);">Win Rate</div>
+                    </div>
+                    <div>
+                        <a href="team-details.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">View</a>
+                    </div>
+                </div>
+                <div class="leaderboard-item">
+                    <div class="rank">5</div>
+                    <div>
+                        <strong>Team Echo</strong>
+                        <div style="font-size: 0.9rem; color: var(--gray-text);">Valorant</div>
+                    </div>
+                    <div>
+                        <strong>10,450</strong>
+                        <div style="font-size: 0.9rem; color: var(--gray-text);">Points</div>
+                    </div>
+                    <div>
+                        <strong>68%</strong>
+                        <div style="font-size: 0.9rem; color: var(--gray-text);">Win Rate</div>
+                    </div>
+                    <div>
+                        <a href="team-details.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">View</a>
+                    </div>
+                </div>
+                <div class="leaderboard-item">
+                    <div class="rank">6</div>
+                    <div>
+                        <strong>Team Foxtrot</strong>
+                        <div style="font-size: 0.9rem; color: var(--gray-text);">CS2</div>
+                    </div>
+                    <div>
+                        <strong>9,890</strong>
+                        <div style="font-size: 0.9rem; color: var(--gray-text);">Points</div>
+                    </div>
+                    <div>
+                        <strong>65%</strong>
+                        <div style="font-size: 0.9rem; color: var(--gray-text);">Win Rate</div>
+                    </div>
+                    <div>
+                        <a href="team-details.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">View</a>
+                    </div>
+                </div>
+                <div class="leaderboard-item">
+                    <div class="rank">7</div>
+                    <div>
+                        <strong>Team Golf</strong>
+                        <div style="font-size: 0.9rem; color: var(--gray-text);">League of Legends</div>
+                    </div>
+                    <div>
+                        <strong>9,520</strong>
+                        <div style="font-size: 0.9rem; color: var(--gray-text);">Points</div>
+                    </div>
+                    <div>
+                        <strong>62%</strong>
+                        <div style="font-size: 0.9rem; color: var(--gray-text);">Win Rate</div>
+                    </div>
+                    <div>
+                        <a href="team-details.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">View</a>
+                    </div>
+                </div>
+                <div class="leaderboard-item">
+                    <div class="rank">8</div>
+                    <div>
+                        <strong>Team Hotel</strong>
+                        <div style="font-size: 0.9rem; color: var(--gray-text);">Valorant</div>
+                    </div>
+                    <div>
+                        <strong>9,120</strong>
+                        <div style="font-size: 0.9rem; color: var(--gray-text);">Points</div>
+                    </div>
+                    <div>
+                        <strong>60%</strong>
+                        <div style="font-size: 0.9rem; color: var(--gray-text);">Win Rate</div>
+                    </div>
+                    <div>
+                        <a href="team-details.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="leaderboard.html">Leaderboard</a></li>
+                        <li><a href="teams.html">Teams</a></li>
+                        <li><a href="players.html">Players</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 eSports Portal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-top" onclick="scrollToTop()" style="display: none; position: fixed; bottom: 30px; right: 30px; background: var(--primary-color); color: var(--darker-bg); border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 1.5rem; cursor: pointer; z-index: 999; box-shadow: var(--shadow);">↑</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

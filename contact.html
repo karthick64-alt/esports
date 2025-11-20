@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - eSports Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">🎮 eSports Portal</a>
+                <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="tournaments.html">Tournaments</a></li>
+                        <li><a href="blog.html">News</a></li>
+                        <li><a href="contact.html" style="color: var(--primary-color);">Contact</a></li>
+                        <li><a href="login.html" class="btn btn-secondary">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="hero" style="min-height: 50vh;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Contact Us</h1>
+                <p>Get in touch with our team. We're here to help!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; max-width: 1200px; margin: 0 auto;">
+                <!-- Contact Form -->
+                <div>
+                    <h2 style="color: var(--primary-color); margin-bottom: 2rem;">Send us a Message</h2>
+                    <form style="background: rgba(255, 255, 255, 0.05); border-radius: 15px; padding: 2rem;">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="tournament">Tournament Inquiry</option>
+                                <option value="team">Team Query</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="media">Media Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <h2 style="color: var(--primary-color); margin-bottom: 2rem;">Contact Information</h2>
+                    
+                    <!-- Support Email & Contact Number -->
+                    <div style="background: rgba(255, 255, 255, 0.05); border-radius: 15px; padding: 2rem; margin-bottom: 2rem;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 1.5rem;">General Support</h3>
+                        <div style="margin-bottom: 1.5rem;">
+                            <strong style="color: var(--light-text);">Email:</strong>
+                            <div style="color: var(--gray-text); margin-top: 0.5rem;">
+                                <a href="mailto:support@esportsportal.com" style="color: var(--primary-color); text-decoration: none;">support@esportsportal.com</a>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <strong style="color: var(--light-text);">Phone:</strong>
+                            <div style="color: var(--gray-text); margin-top: 0.5rem;">
+                                <a href="tel:+1234567890" style="color: var(--primary-color); text-decoration: none;">+1 (234) 567-8900</a>
+                            </div>
+                        </div>
+                        <div>
+                            <strong style="color: var(--light-text);">Office Hours:</strong>
+                            <div style="color: var(--gray-text); margin-top: 0.5rem;">Monday - Friday: 9:00 AM - 6:00 PM EST</div>
+                            <div style="color: var(--gray-text);">Saturday - Sunday: 10:00 AM - 4:00 PM EST</div>
+                        </div>
+                    </div>
+
+                    <!-- eSports Admin / Team Queries -->
+                    <div style="background: rgba(255, 255, 255, 0.05); border-radius: 15px; padding: 2rem; margin-bottom: 2rem;">
+                        <h3 style="color: var(--secondary-color); margin-bottom: 1.5rem;">Tournament & Team Queries</h3>
+                        <div style="margin-bottom: 1.5rem;">
+                            <strong style="color: var(--light-text);">Tournament Inquiries:</strong>
+                            <div style="color: var(--gray-text); margin-top: 0.5rem;">
+                                <a href="mailto:tournaments@esportsportal.com" style="color: var(--primary-color); text-decoration: none;">tournaments@esportsportal.com</a>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <strong style="color: var(--light-text);">Team Management:</strong>
+                            <div style="color: var(--gray-text); margin-top: 0.5rem;">
+                                <a href="mailto:teams@esportsportal.com" style="color: var(--primary-color); text-decoration: none;">teams@esportsportal.com</a>
+                            </div>
+                        </div>
+                        <div>
+                            <strong style="color: var(--light-text);">Partnership & Sponsorship:</strong>
+                            <div style="color: var(--gray-text); margin-top: 0.5rem;">
+                                <a href="mailto:partners@esportsportal.com" style="color: var(--primary-color); text-decoration: none;">partners@esportsportal.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div style="background: rgba(255, 255, 255, 0.05); border-radius: 15px; padding: 2rem;">
+                        <h3 style="color: var(--accent-purple); margin-bottom: 1.5rem;">Connect with Us</h3>
+                        <p style="color: var(--gray-text); margin-bottom: 1.5rem;">Follow us on social media for updates, highlights, and community engagement</p>
+                        <div class="social-icons" style="justify-content: flex-start;">
+                            <a href="#" title="Discord" style="width: 50px; height: 50px;">💬</a>
+                            <a href="#" title="Twitch" style="width: 50px; height: 50px;">📺</a>
+                            <a href="#" title="YouTube" style="width: 50px; height: 50px;">▶️</a>
+                            <a href="#" title="Instagram" style="width: 50px; height: 50px;">📷</a>
+                            <a href="#" title="Twitter" style="width: 50px; height: 50px;">🐦</a>
+                        </div>
+                        <div style="margin-top: 1.5rem;">
+                            <strong style="color: var(--light-text);">Discord Server:</strong>
+                            <div style="color: var(--primary-color); margin-top: 0.5rem;">discord.gg/esportsportal</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Venue Map (if offline tournaments) -->
+            <div style="max-width: 1200px; margin: 3rem auto 0;">
+                <h2 style="color: var(--primary-color); margin-bottom: 2rem; text-align: center;">Visit Our Office</h2>
+                <div style="background: rgba(255, 255, 255, 0.05); border-radius: 15px; padding: 2rem; margin-bottom: 2rem;">
+                    <p style="color: var(--gray-text); margin-bottom: 1rem; text-align: center;">
+                        <strong>Address:</strong> 123 Gaming Street, eSports City, EC 12345, USA
+                    </p>
+                    <div style="background: rgba(0, 0, 0, 0.3); border-radius: 10px; height: 400px; display: flex; align-items: center; justify-content: center; border: 2px solid rgba(0, 255, 136, 0.2);">
+                        <p style="color: var(--gray-text);">Map Embed (Google Maps / OpenStreetMap)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Quick Links -->
+            <div style="max-width: 1200px; margin: 3rem auto 0;">
+                <h2 style="color: var(--primary-color); margin-bottom: 2rem; text-align: center;">Frequently Asked Questions</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div style="background: rgba(255, 255, 255, 0.05); border-radius: 15px; padding: 2rem;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">How do I register for a tournament?</h3>
+                        <p style="color: var(--gray-text);">Create an account, join or create a team, and register for tournaments through the tournament page. Visit our <a href="service-details.html" style="color: var(--primary-color);">tournament details</a> for step-by-step instructions.</p>
+                    </div>
+                    <div style="background: rgba(255, 255, 255, 0.05); border-radius: 15px; padding: 2rem;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">How can my team join your platform?</h3>
+                        <p style="color: var(--gray-text);">Simply create a team on our platform, add your players, and start competing! Visit our <a href="teams.html" style="color: var(--primary-color);">teams page</a> to get started.</p>
+                    </div>
+                    <div style="background: rgba(255, 255, 255, 0.05); border-radius: 15px; padding: 2rem;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Can I stream my matches?</h3>
+                        <p style="color: var(--gray-text);">Yes! We support streaming integration. Check out our <a href="streaming.html" style="color: var(--primary-color);">streaming page</a> for more information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="blog.html">News</a></li>
+                        <li><a href="tournaments.html">Tournaments</a></li>
+                        <li><a href="teams.html">Teams</a></li>
+                        <li><a href="leaderboard.html">Leaderboard</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="#" title="Discord">💬</a>
+                        <a href="#" title="Twitch">📺</a>
+                        <a href="#" title="YouTube">▶️</a>
+                        <a href="#" title="Instagram">📷</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 eSports Portal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-top" onclick="scrollToTop()" style="display: none; position: fixed; bottom: 30px; right: 30px; background: var(--primary-color); color: var(--darker-bg); border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 1.5rem; cursor: pointer; z-index: 999; box-shadow: var(--shadow);">↑</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eSports Portal - Mobile eSports / FPS / Battle Royale</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">🎮 Mobile eSports</a>
+                <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">General Portal</a></li>
+                        <li><a href="index2.html" style="color: var(--primary-color);">Home</a></li>
+                        <li><a href="tournaments.html">Tournaments</a></li>
+                        <li><a href="teams.html">Teams</a></li>
+                        <li><a href="leaderboard.html">Leaderboard</a></li>
+                        <li><a href="blog.html">News</a></li>
+                        <li><a href="login.html" class="btn btn-secondary">Login</a></li>
+                        <li><a href="tournaments.html" class="btn btn-tournament">Join Tournament</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Niche Game Hero Area -->
+    <section class="hero" style="background: linear-gradient(135deg, rgba(157, 78, 221, 0.2) 0%, rgba(255, 51, 102, 0.2) 100%);">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Mobile eSports Arena</h1>
+                <p>Where mobile gaming champions are made. Compete in FPS, Battle Royale, and MOBA tournaments on your mobile device.</p>
+                
+                <!-- Featured Tournament -->
+                <div class="tournament-announcement" style="background: rgba(157, 78, 221, 0.2); border: 2px solid var(--accent-purple); border-radius: 10px; padding: 1.5rem; margin: 2rem 0;">
+                    <h2 style="color: var(--accent-purple); margin-bottom: 0.5rem;">📱 Mobile Championship 2024</h2>
+                    <p style="color: var(--gray-text);">Grand Prize: $150,000 | Mobile Gaming Event</p>
+                    
+                    <div class="countdown-timer">
+                        <div class="countdown-item">
+                            <div class="countdown-number">25</div>
+                            <div class="countdown-label">Days</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-number">08</div>
+                            <div class="countdown-label">Hours</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-number">30</div>
+                            <div class="countdown-label">Minutes</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-number">15</div>
+                            <div class="countdown-label">Seconds</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="tournaments.html" class="btn btn-primary">Join the Arena</a>
+                    <a href="gallery.html" class="btn btn-secondary">Watch Highlights</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Game Modes (Cluster Cards) -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Game Modes</h2>
+            <div class="games-grid">
+                <div class="game-card" style="border: 2px solid var(--accent-purple);">
+                    <img src="https://via.placeholder.com/300x200/9d4edd/ffffff?text=FPS+Mode" alt="FPS">
+                    <h3 style="color: var(--accent-purple);">FPS Mode</h3>
+                    <p>Call of Duty Mobile, PUBG Mobile</p>
+                    <p><strong>Active Players:</strong> 25M+</p>
+                    <a href="tournaments.html?mode=fps" class="btn btn-primary" style="margin-top: 1rem;">View Tournaments</a>
+                </div>
+                <div class="game-card" style="border: 2px solid var(--accent-red);">
+                    <img src="https://via.placeholder.com/300x200/ff3366/ffffff?text=Battle+Royale" alt="Battle Royale">
+                    <h3 style="color: var(--accent-red);">Battle Royale</h3>
+                    <p>PUBG Mobile, Free Fire, Fortnite Mobile</p>
+                    <p><strong>Active Players:</strong> 80M+</p>
+                    <a href="tournaments.html?mode=battleroyale" class="btn btn-primary" style="margin-top: 1rem;">View Tournaments</a>
+                </div>
+                <div class="game-card" style="border: 2px solid var(--secondary-color);">
+                    <img src="https://via.placeholder.com/300x200/0099ff/ffffff?text=MOBA+Mobile" alt="MOBA">
+                    <h3 style="color: var(--secondary-color);">MOBA Mobile</h3>
+                    <p>Mobile Legends, Wild Rift, Arena of Valor</p>
+                    <p><strong>Active Players:</strong> 100M+</p>
+                    <a href="tournaments.html?mode=moba" class="btn btn-primary" style="margin-top: 1rem;">View Tournaments</a>
+                </div>
+                <div class="game-card" style="border: 2px solid var(--primary-color);">
+                    <img src="https://via.placeholder.com/300x200/00ff88/000000?text=Racing+Games" alt="Racing">
+                    <h3 style="color: var(--primary-color);">Racing Games</h3>
+                    <p>Asphalt 9, Real Racing 3</p>
+                    <p><strong>Active Players:</strong> 15M+</p>
+                    <a href="tournaments.html?mode=racing" class="btn btn-primary" style="margin-top: 1rem;">View Tournaments</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pro Teams Showcase -->
+    <section class="section" style="background: rgba(157, 78, 221, 0.1);">
+        <div class="container">
+            <h2 class="section-title">Pro Mobile Teams</h2>
+            <div class="tournament-grid">
+                <div class="tournament-card">
+                    <img src="https://via.placeholder.com/400x200/9d4edd/ffffff?text=Team+Mobile+Alpha" alt="Team">
+                    <h3>Team Mobile Alpha</h3>
+                    <p><span class="badge badge-primary">PUBG Mobile Champions</span></p>
+                    <div style="margin: 1rem 0;">
+                        <p><strong>Region:</strong> Asia</p>
+                        <p><strong>Wins:</strong> 52 | <strong>Losses:</strong> 8</p>
+                        <p><strong>Prize Winnings:</strong> $350,000</p>
+                    </div>
+                    <a href="team-details.html" class="btn btn-primary">View Team</a>
+                </div>
+                <div class="tournament-card">
+                    <img src="https://via.placeholder.com/400x200/ff3366/ffffff?text=Team+Mobile+Beta" alt="Team">
+                    <h3>Team Mobile Beta</h3>
+                    <p><span class="badge badge-danger">Call of Duty Mobile Masters</span></p>
+                    <div style="margin: 1rem 0;">
+                        <p><strong>Region:</strong> North America</p>
+                        <p><strong>Wins:</strong> 48 | <strong>Losses:</strong> 12</p>
+                        <p><strong>Prize Winnings:</strong> $280,000</p>
+                    </div>
+                    <a href="team-details.html" class="btn btn-primary">View Team</a>
+                </div>
+                <div class="tournament-card">
+                    <img src="https://via.placeholder.com/400x200/0099ff/ffffff?text=Team+Mobile+Gamma" alt="Team">
+                    <h3>Team Mobile Gamma</h3>
+                    <p><span class="badge badge-secondary">Mobile Legends Legends</span></p>
+                    <div style="margin: 1rem 0;">
+                        <p><strong>Region:</strong> Southeast Asia</p>
+                        <p><strong>Wins:</strong> 45 | <strong>Losses:</strong> 15</p>
+                        <p><strong>Prize Winnings:</strong> $420,000</p>
+                    </div>
+                    <a href="team-details.html" class="btn btn-primary">View Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tournament Prize Pool Display -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Tournament Prize Pools</h2>
+            <div class="tournament-grid">
+                <div class="tournament-card" style="background: linear-gradient(135deg, rgba(157, 78, 221, 0.2) 0%, rgba(255, 51, 102, 0.2) 100%);">
+                    <h3 style="color: var(--accent-purple);">Mobile World Championship</h3>
+                    <div class="prize-pool" style="font-size: 2rem; margin: 1rem 0;">$500,000</div>
+                    <p style="margin: 1rem 0;"><strong>Game:</strong> PUBG Mobile</p>
+                    <p style="margin: 1rem 0;"><strong>Teams:</strong> 64</p>
+                    <p style="margin: 1rem 0;"><strong>Dates:</strong> May 15-20, 2024</p>
+                    <a href="service-details.html" class="btn btn-tournament">View Details</a>
+                </div>
+                <div class="tournament-card" style="background: linear-gradient(135deg, rgba(255, 51, 102, 0.2) 0%, rgba(0, 153, 255, 0.2) 100%);">
+                    <h3 style="color: var(--accent-red);">Call of Duty Mobile Pro League</h3>
+                    <div class="prize-pool" style="font-size: 2rem; margin: 1rem 0;">$300,000</div>
+                    <p style="margin: 1rem 0;"><strong>Game:</strong> Call of Duty Mobile</p>
+                    <p style="margin: 1rem 0;"><strong>Teams:</strong> 48</p>
+                    <p style="margin: 1rem 0;"><strong>Dates:</strong> April 10-15, 2024</p>
+                    <a href="service-details.html" class="btn btn-tournament">View Details</a>
+                </div>
+                <div class="tournament-card" style="background: linear-gradient(135deg, rgba(0, 153, 255, 0.2) 0%, rgba(0, 255, 136, 0.2) 100%);">
+                    <h3 style="color: var(--secondary-color);">Mobile Legends Championship</h3>
+                    <div class="prize-pool" style="font-size: 2rem; margin: 1rem 0;">$400,000</div>
+                    <p style="margin: 1rem 0;"><strong>Game:</strong> Mobile Legends</p>
+                    <p style="margin: 1rem 0;"><strong>Teams:</strong> 32</p>
+                    <p style="margin: 1rem 0;"><strong>Dates:</strong> June 1-8, 2024</p>
+                    <a href="service-details.html" class="btn btn-tournament">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gaming Events Calendar -->
+    <section class="section" style="background: rgba(157, 78, 221, 0.1);">
+        <div class="container">
+            <h2 class="section-title">Gaming Events Calendar</h2>
+            <div style="background: rgba(255, 255, 255, 0.05); border-radius: 15px; padding: 2rem; margin-top: 2rem;">
+                <div class="match-results">
+                    <div class="match-item" style="grid-template-columns: 150px 1fr 200px 200px;">
+                        <div><strong>March 15</strong><br><span style="color: var(--gray-text); font-size: 0.9rem;">2024</span></div>
+                        <div>
+                            <strong>PUBG Mobile Spring Cup</strong>
+                            <div style="font-size: 0.9rem; color: var(--gray-text);">Qualifiers</div>
+                        </div>
+                        <div><span class="badge badge-primary">Open</span></div>
+                        <div><a href="match-schedule.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">View</a></div>
+                    </div>
+                    <div class="match-item" style="grid-template-columns: 150px 1fr 200px 200px;">
+                        <div><strong>March 22</strong><br><span style="color: var(--gray-text); font-size: 0.9rem;">2024</span></div>
+                        <div>
+                            <strong>Call of Duty Mobile Weekly</strong>
+                            <div style="font-size: 0.9rem; color: var(--gray-text);">Tournament</div>
+                        </div>
+                        <div><span class="badge badge-secondary">Soon</span></div>
+                        <div><a href="match-schedule.html" class="btn btn-secondary" style="padding: 0.5rem 1rem;">View</a></div>
+                    </div>
+                    <div class="match-item" style="grid-template-columns: 150px 1fr 200px 200px;">
+                        <div><strong>March 30</strong><br><span style="color: var(--gray-text); font-size: 0.9rem;">2024</span></div>
+                        <div>
+                            <strong>Mobile Legends Regional Finals</strong>
+                            <div style="font-size: 0.9rem; color: var(--gray-text);">Finals</div>
+                        </div>
+                        <div><span class="badge badge-danger">Live</span></div>
+                        <div><a href="match-schedule.html" class="btn btn-tournament" style="padding: 0.5rem 1rem;">Watch</a></div>
+                    </div>
+                    <div class="match-item" style="grid-template-columns: 150px 1fr 200px 200px;">
+                        <div><strong>April 5</strong><br><span style="color: var(--gray-text); font-size: 0.9rem;">2024</span></div>
+                        <div>
+                            <strong>Free Fire Championship</strong>
+                            <div style="font-size: 0.9rem; color: var(--gray-text);">Championship</div>
+                        </div>
+                        <div><span class="badge badge-primary">Open</span></div>
+                        <div><a href="match-schedule.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">View</a></div>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="match-schedule.html" class="btn btn-secondary">View Full Calendar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlight Reels / Gameplay Videos -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Highlight Reels & Gameplay</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="stream-embed" style="padding-bottom: 56.25%;">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3>EPIC PUBG Mobile Clutch</h3>
+                        <p>Watch the most incredible plays from the Mobile Championship...</p>
+                        <a href="gallery.html" class="btn btn-primary" style="margin-top: 1rem;">View More</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="stream-embed" style="padding-bottom: 56.25%;">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3>Mobile Legends Team Fight</h3>
+                        <p>Amazing team coordination leads to victory...</p>
+                        <a href="gallery.html" class="btn btn-primary" style="margin-top: 1rem;">View More</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="stream-embed" style="padding-bottom: 56.25%;">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3>Call of Duty Mobile Ace</h3>
+                        <p>Perfect execution in competitive match...</p>
+                        <a href="gallery.html" class="btn btn-primary" style="margin-top: 1rem;">View More</a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="gallery.html" class="btn btn-secondary">View All Highlights</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fan Community Section -->
+    <section class="section" style="background: rgba(157, 78, 221, 0.1);">
+        <div class="container">
+            <h2 class="section-title">Join the Community</h2>
+            <div class="tournament-grid">
+                <div class="tournament-card" style="text-align: center;">
+                    <h3 style="font-size: 3rem; margin-bottom: 1rem;">💬</h3>
+                    <h3>Discord Community</h3>
+                    <p>Connect with 50,000+ mobile gamers</p>
+                    <p style="color: var(--gray-text);">Chat, team up, and share strategies</p>
+                    <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Join Discord</a>
+                </div>
+                <div class="tournament-card" style="text-align: center;">
+                    <h3 style="font-size: 3rem; margin-bottom: 1rem;">📺</h3>
+                    <h3>Watch on Twitch</h3>
+                    <p>Follow our official channel</p>
+                    <p style="color: var(--gray-text);">Live streams every day</p>
+                    <a href="streaming.html" class="btn btn-primary" style="margin-top: 1rem;">Follow Us</a>
+                </div>
+                <div class="tournament-card" style="text-align: center;">
+                    <h3 style="font-size: 3rem; margin-bottom: 1rem;">▶️</h3>
+                    <h3>YouTube Channel</h3>
+                    <p>Highlights, tutorials, and more</p>
+                    <p style="color: var(--gray-text);">1M+ subscribers</p>
+                    <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: linear-gradient(135deg, #9d4edd 0%, #ff3366 100%);">
+        <div class="container">
+            <div style="text-align: center; padding: 3rem 0;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Join the Arena. Watch Highlights.</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;">Be part of the mobile eSports revolution</p>
+                <div class="hero-cta">
+                    <a href="tournaments.html" class="btn" style="background: white; color: var(--accent-purple); padding: 1rem 2rem; font-size: 1.1rem;">Join Tournament</a>
+                    <a href="gallery.html" class="btn" style="background: rgba(255,255,255,0.2); color: white; border: 2px solid white; padding: 1rem 2rem; font-size: 1.1rem;">Watch Highlights</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index2.html">Home</a></li>
+                        <li><a href="tournaments.html">Tournaments</a></li>
+                        <li><a href="teams.html">Teams</a></li>
+                        <li><a href="leaderboard.html">Leaderboard</a></li>
+                        <li><a href="match-schedule.html">Events Calendar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Game Modes</h3>
+                    <ul>
+                        <li><a href="tournaments.html?mode=fps">FPS Mode</a></li>
+                        <li><a href="tournaments.html?mode=battleroyale">Battle Royale</a></li>
+                        <li><a href="tournaments.html?mode=moba">MOBA Mobile</a></li>
+                        <li><a href="tournaments.html?mode=racing">Racing Games</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="#" title="Discord">💬</a>
+                        <a href="#" title="Twitch">📺</a>
+                        <a href="#" title="YouTube">▶️</a>
+                        <a href="#" title="Instagram">📷</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mobile eSports Portal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-top" onclick="scrollToTop()" style="display: none; position: fixed; bottom: 30px; right: 30px; background: var(--primary-color); color: var(--darker-bg); border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 1.5rem; cursor: pointer; z-index: 999; box-shadow: var(--shadow);">↑</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

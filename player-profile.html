@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player1 Profile - eSports Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">🎮 eSports Portal</a>
+                <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="players.html">Players</a></li>
+                        <li><a href="teams.html">Teams</a></li>
+                        <li><a href="leaderboard.html">Leaderboard</a></li>
+                        <li><a href="login.html" class="btn btn-secondary">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Player Profile Hero -->
+    <section class="hero" style="min-height: 50vh;">
+        <div class="container">
+            <div style="text-align: center;">
+                <img src="https://via.placeholder.com/200x200/667eea/ffffff?text=Player1" alt="Player" style="width: 180px; height: 180px; border-radius: 50%; margin-bottom: 1rem; border: 5px solid var(--primary-color);">
+                <h1>Player1</h1>
+                <p style="font-size: 1.2rem; margin: 1rem 0;">
+                    <a href="team-details.html" style="color: var(--primary-color); text-decoration: none;">Team Alpha</a> | 
+                    <span class="badge badge-primary">Valorant</span> |
+                    <span class="badge badge-secondary">Rank #1</span>
+                </p>
+                <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                    <div>
+                        <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color);">1.45</div>
+                        <div style="color: var(--gray-text);">K/D Ratio</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 1.5rem; font-weight: 700; color: var(--secondary-color);">58%</div>
+                        <div style="color: var(--gray-text);">Headshot %</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-red);">78.9%</div>
+                        <div style="color: var(--gray-text);">Win Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Player Stats -->
+    <section class="section">
+        <div class="container">
+            <div style="max-width: 1000px; margin: 0 auto;">
+                <h2 class="section-title">Player Statistics</h2>
+                <div style="background: rgba(255, 255, 255, 0.05); border-radius: 15px; padding: 2rem; margin-bottom: 3rem;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--primary-color);">1.45</div>
+                            <div style="color: var(--gray-text); margin-top: 0.5rem;">K/D Ratio</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--secondary-color);">58%</div>
+                            <div style="color: var(--gray-text); margin-top: 0.5rem;">Headshot %</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--accent-red);">245</div>
+                            <div style="color: var(--gray-text); margin-top: 0.5rem;">Total Kills</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--accent-purple);">169</div>
+                            <div style="color: var(--gray-text); margin-top: 0.5rem;">Total Deaths</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--primary-color);">78.9%</div>
+                            <div style="color: var(--gray-text); margin-top: 0.5rem;">Win Rate</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--secondary-color);">57</div>
+                            <div style="color: var(--gray-text); margin-top: 0.5rem;">Matches Played</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="section-title">Recent Matches</h2>
+                <div class="match-results" style="margin-bottom: 3rem;">
+                    <div class="match-item">
+                        <div class="team">
+                            <div class="team-logo" style="background: #667eea;"></div>
+                            <div>
+                                <strong>Team Alpha</strong>
+                                <div style="font-size: 0.9rem; color: var(--gray-text);">vs Team Beta</div>
+                            </div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 1.2rem; font-weight: 700; color: var(--primary-color);">Won</div>
+                            <div style="font-size: 0.9rem; color: var(--gray-text);">K/D: 25/12</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="color: var(--primary-color); font-weight: 700;">13-7</div>
+                        </div>
+                        <div>
+                            <a href="match-details.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">View Match</a>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="section-title">Achievements</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+                    <div style="background: rgba(255, 215, 0, 0.1); border-radius: 15px; padding: 2rem; text-align: center; border: 2px solid #ffd700;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">🏆</div>
+                        <h3 style="color: #ffd700;">Champion 2024</h3>
+                        <p style="color: var(--gray-text);">Valorant Championship</p>
+                    </div>
+                    <div style="background: rgba(192, 192, 192, 0.1); border-radius: 15px; padding: 2rem; text-align: center; border: 2px solid #c0c0c0;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">🥈</div>
+                        <h3 style="color: #c0c0c0;">Runner-up 2023</h3>
+                        <p style="color: var(--gray-text);">Spring Cup</p>
+                    </div>
+                    <div style="background: rgba(0, 255, 136, 0.1); border-radius: 15px; padding: 2rem; text-align: center; border: 2px solid var(--primary-color);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">⭐</div>
+                        <h3 style="color: var(--primary-color);">MVP Award</h3>
+                        <p style="color: var(--gray-text);">Regional Qualifiers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="players.html">Players</a></li>
+                        <li><a href="teams.html">Teams</a></li>
+                        <li><a href="leaderboard.html">Leaderboard</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 eSports Portal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-top" onclick="scrollToTop()" style="display: none; position: fixed; bottom: 30px; right: 30px; background: var(--primary-color); color: var(--darker-bg); border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 1.5rem; cursor: pointer; z-index: 999; box-shadow: var(--shadow);">↑</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

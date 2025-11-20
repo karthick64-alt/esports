@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournaments - eSports Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">🎮 eSports Portal</a>
+                <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="tournaments.html" style="color: var(--primary-color);">Tournaments</a></li>
+                        <li><a href="teams.html">Teams</a></li>
+                        <li><a href="leaderboard.html">Leaderboard</a></li>
+                        <li><a href="blog.html">News</a></li>
+                        <li><a href="login.html" class="btn btn-secondary">Login</a></li>
+                        <li><a href="tournaments.html" class="btn btn-tournament">Join Tournament</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tournaments Hero -->
+    <section class="hero" style="min-height: 50vh; background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1606166188510-3a0b58d0d0e0?w=3840&h=2160&fit=crop&q=90&auto=format'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Active Tournaments</h1>
+                <p>Join the competition and compete for glory and prizes</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tournament Filters -->
+    <section class="section" style="padding-top: 2rem; padding-bottom: 2rem; background: rgba(0, 255, 136, 0.05);">
+        <div class="container">
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+                <a href="tournaments.html" class="btn btn-primary">All</a>
+                <a href="tournaments.html?status=open" class="btn btn-secondary">Open Registration</a>
+                <a href="tournaments.html?status=live" class="btn btn-secondary">Live Now</a>
+                <a href="tournaments.html?status=upcoming" class="btn btn-secondary">Upcoming</a>
+                <a href="tournaments.html?game=valorant" class="btn btn-secondary">Valorant</a>
+                <a href="tournaments.html?game=cs2" class="btn btn-secondary">CS2</a>
+                <a href="tournaments.html?game=lol" class="btn btn-secondary">League of Legends</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tournaments Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="tournament-grid">
+                <div class="tournament-card">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=3840&h=2160&fit=crop&q=90&auto=format" alt="Valorant Championship 2024 - Competitive Gaming Tournament" style="object-fit: cover; width: 100%; height: 200px;" loading="lazy">
+                    <h3>Valorant Championship 2024</h3>
+                    <p><span class="badge badge-primary">Open Registration</span></p>
+                    <div class="prize-pool">$250,000</div>
+                    <p style="margin: 1rem 0;"><strong>Teams:</strong> 64 | <strong>Game:</strong> Valorant</p>
+                    <p style="margin: 1rem 0;"><strong>Starts:</strong> March 20, 2024</p>
+                    <a href="service-details.html" class="btn btn-primary">View Details</a>
+                </div>
+                <div class="tournament-card">
+                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=3840&h=2160&fit=crop&q=90&auto=format" alt="CS2 Pro League - Counter-Strike Tournament" style="object-fit: cover; width: 100%; height: 200px;" loading="lazy">
+                    <h3>CS2 Pro League</h3>
+                    <p><span class="badge badge-primary">Open Registration</span></p>
+                    <div class="prize-pool">$200,000</div>
+                    <p style="margin: 1rem 0;"><strong>Teams:</strong> 48 | <strong>Game:</strong> Counter-Strike 2</p>
+                    <p style="margin: 1rem 0;"><strong>Starts:</strong> March 25, 2024</p>
+                    <a href="service-details.html" class="btn btn-primary">View Details</a>
+                </div>
+                <div class="tournament-card">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=3840&h=2160&fit=crop&q=90&auto=format" alt="League of Legends Masters Tournament" style="object-fit: cover; width: 100%; height: 200px;" loading="lazy">
+                    <h3>League of Legends Masters</h3>
+                    <p><span class="badge badge-primary">Open Registration</span></p>
+                    <div class="prize-pool">$300,000</div>
+                    <p style="margin: 1rem 0;"><strong>Teams:</strong> 32 | <strong>Game:</strong> League of Legends</p>
+                    <p style="margin: 1rem 0;"><strong>Starts:</strong> April 1, 2024</p>
+                    <a href="service-details.html" class="btn btn-primary">View Details</a>
+                </div>
+                <div class="tournament-card">
+                    <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=3840&h=2160&fit=crop&q=90&auto=format" alt="Dota 2 Championship - Live eSports Tournament" style="object-fit: cover; width: 100%; height: 200px;" loading="lazy">
+                    <h3>Dota 2 Championship</h3>
+                    <p><span class="badge badge-danger">Live Now</span></p>
+                    <div class="prize-pool">$500,000</div>
+                    <p style="margin: 1rem 0;"><strong>Teams:</strong> 16 | <strong>Game:</strong> Dota 2</p>
+                    <p style="margin: 1rem 0;"><strong>Status:</strong> Playoffs</p>
+                    <a href="match-details.html" class="btn btn-tournament">Watch Live</a>
+                </div>
+                <div class="tournament-card">
+                    <img src="https://images.unsplash.com/photo-1556438064-2d7646166914?w=3840&h=2160&fit=crop&q=90&auto=format" alt="Apex Legends Cup - Battle Royale Tournament" style="object-fit: cover; width: 100%; height: 200px;" loading="lazy">
+                    <h3>Apex Legends Cup</h3>
+                    <p><span class="badge badge-secondary">Soon</span></p>
+                    <div class="prize-pool">$150,000</div>
+                    <p style="margin: 1rem 0;"><strong>Teams:</strong> 40 | <strong>Game:</strong> Apex Legends</p>
+                    <p style="margin: 1rem 0;"><strong>Starts:</strong> April 15, 2024</p>
+                    <a href="service-details.html" class="btn btn-secondary">Notify Me</a>
+                </div>
+                <div class="tournament-card">
+                    <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=3840&h=2160&fit=crop&q=90&auto=format" alt="Overwatch 2 League - Team-Based Shooter Tournament" style="object-fit: cover; width: 100%; height: 200px;" loading="lazy">
+                    <h3>Overwatch 2 League</h3>
+                    <p><span class="badge badge-primary">Open Registration</span></p>
+                    <div class="prize-pool">$180,000</div>
+                    <p style="margin: 1rem 0;"><strong>Teams:</strong> 24 | <strong>Game:</strong> Overwatch 2</p>
+                    <p style="margin: 1rem 0;"><strong>Starts:</strong> April 10, 2024</p>
+                    <a href="service-details.html" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tournaments.html">Tournaments</a></li>
+                        <li><a href="teams.html">Teams</a></li>
+                        <li><a href="leaderboard.html">Leaderboard</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="#" title="Discord">💬</a>
+                        <a href="#" title="Twitch">📺</a>
+                        <a href="#" title="YouTube">▶️</a>
+                        <a href="#" title="Instagram">📷</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 eSports Portal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-top" onclick="scrollToTop()" style="display: none; position: fixed; bottom: 30px; right: 30px; background: var(--primary-color); color: var(--darker-bg); border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 1.5rem; cursor: pointer; z-index: 999; box-shadow: var(--shadow);">↑</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

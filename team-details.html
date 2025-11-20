@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Alpha - eSports Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">🎮 eSports Portal</a>
+                <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="teams.html">Teams</a></li>
+                        <li><a href="players.html">Players</a></li>
+                        <li><a href="leaderboard.html">Leaderboard</a></li>
+                        <li><a href="blog.html">News</a></li>
+                        <li><a href="login.html" class="btn btn-secondary">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Team Details Hero -->
+    <section class="hero" style="min-height: 50vh; background: linear-gradient(135deg, rgba(102, 126, 234, 0.3) 0%, rgba(118, 75, 162, 0.3) 100%);">
+        <div class="container">
+            <div style="text-align: center;">
+                <img src="https://via.placeholder.com/200x200/667eea/ffffff?text=Team+Alpha" alt="Team Logo" style="width: 150px; height: 150px; border-radius: 50%; margin-bottom: 1rem; border: 4px solid var(--primary-color);">
+                <h1>Team Alpha</h1>
+                <p style="font-size: 1.2rem; margin: 1rem 0;">
+                    <span class="badge badge-primary">Rank #1</span>
+                    <span class="badge badge-secondary">Valorant</span>
+                </p>
+                <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                    <div>
+                        <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color);">78.9%</div>
+                        <div style="color: var(--gray-text);">Win Rate</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 1.5rem; font-weight: 700; color: var(--secondary-color);">45-12</div>
+                        <div style="color: var(--gray-text);">Wins - Losses</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-red);">$350,000</div>
+                        <div style="color: var(--gray-text);">Prize Winnings</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Details Content -->
+    <section class="section">
+        <div class="container">
+            <div style="max-width: 1200px; margin: 0 auto;">
+                <!-- Players Lineup -->
+                <h2 class="section-title">Players Lineup</h2>
+                <div class="games-grid" style="margin-bottom: 4rem;">
+                    <div class="game-card" style="text-align: center;">
+                        <img src="https://via.placeholder.com/150x150/667eea/ffffff?text=P1" alt="Player" style="width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 1rem; border: 3px solid var(--primary-color);">
+                        <h3>Player1</h3>
+                        <p style="color: var(--primary-color);">In-Game Leader</p>
+                        <p style="color: var(--gray-text); font-size: 0.9rem;">K/D: 1.45 | Headshot: 58%</p>
+                        <a href="player-profile.html" class="btn btn-primary" style="margin-top: 1rem;">View Profile</a>
+                    </div>
+                    <div class="game-card" style="text-align: center;">
+                        <img src="https://via.placeholder.com/150x150/764ba2/ffffff?text=P2" alt="Player" style="width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 1rem; border: 3px solid var(--secondary-color);">
+                        <h3>Player2</h3>
+                        <p style="color: var(--secondary-color);">Support</p>
+                        <p style="color: var(--gray-text); font-size: 0.9rem;">K/D: 1.32 | Headshot: 62%</p>
+                        <a href="player-profile.html" class="btn btn-primary" style="margin-top: 1rem;">View Profile</a>
+                    </div>
+                    <div class="game-card" style="text-align: center;">
+                        <img src="https://via.placeholder.com/150x150/ff3366/ffffff?text=P3" alt="Player" style="width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 1rem; border: 3px solid var(--accent-red);">
+                        <h3>Player3</h3>
+                        <p style="color: var(--accent-red);">Duelist</p>
+                        <p style="color: var(--gray-text); font-size: 0.9rem;">K/D: 1.58 | Headshot: 65%</p>
+                        <a href="player-profile.html" class="btn btn-primary" style="margin-top: 1rem;">View Profile</a>
+                    </div>
+                    <div class="game-card" style="text-align: center;">
+                        <img src="https://via.placeholder.com/150x150/0099ff/ffffff?text=P4" alt="Player" style="width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 1rem; border: 3px solid var(--secondary-color);">
+                        <h3>Player4</h3>
+                        <p style="color: var(--secondary-color);">Sentinel</p>
+                        <p style="color: var(--gray-text); font-size: 0.9rem;">K/D: 1.28 | Headshot: 55%</p>
+                        <a href="player-profile.html" class="btn btn-primary" style="margin-top: 1rem;">View Profile</a>
+                    </div>
+                    <div class="game-card" style="text-align: center;">
+                        <img src="https://via.placeholder.com/150x150/00ff88/000000?text=P5" alt="Player" style="width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 1rem; border: 3px solid var(--primary-color);">
+                        <h3>Player5</h3>
+                        <p style="color: var(--primary-color);">Controller</p>
+                        <p style="color: var(--gray-text); font-size: 0.9rem;">K/D: 1.35 | Headshot: 60%</p>
+                        <a href="player-profile.html" class="btn btn-primary" style="margin-top: 1rem;">View Profile</a>
+                    </div>
+                </div>
+
+                <!-- Recent Matches -->
+                <h2 class="section-title">Recent Matches</h2>
+                <div class="match-results" style="margin-bottom: 4rem;">
+                    <div class="match-item">
+                        <div class="team">
+                            <div class="team-logo" style="background: #667eea;"></div>
+                            <div>
+                                <strong>Team Alpha</strong>
+                                <div style="font-size: 0.9rem; color: var(--gray-text);">Valorant Championship</div>
+                            </div>
+                        </div>
+                        <div class="score" style="color: var(--primary-color);">Won</div>
+                        <div class="team">
+                            <div class="team-logo" style="background: #764ba2;"></div>
+                            <div>
+                                <strong>Team Beta</strong>
+                                <div style="font-size: 0.9rem; color: var(--gray-text);">Score: 13-7</div>
+                            </div>
+                        </div>
+                        <div style="text-align: center;">
+                            <a href="match-details.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">View Match</a>
+                        </div>
+                    </div>
+                    <div class="match-item">
+                        <div class="team">
+                            <div class="team-logo" style="background: #667eea;"></div>
+                            <div>
+                                <strong>Team Alpha</strong>
+                                <div style="font-size: 0.9rem; color: var(--gray-text);">Regional Qualifiers</div>
+                            </div>
+                        </div>
+                        <div class="score" style="color: var(--primary-color);">Won</div>
+                        <div class="team">
+                            <div class="team-logo" style="background: #ff3366;"></div>
+                            <div>
+                                <strong>Team Gamma</strong>
+                                <div style="font-size: 0.9rem; color: var(--gray-text);">Score: 13-9</div>
+                            </div>
+                        </div>
+                        <div style="text-align: center;">
+                            <a href="match-details.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">View Match</a>
+                        </div>
+                    </div>
+                    <div class="match-item">
+                        <div class="team">
+                            <div class="team-logo" style="background: #667eea;"></div>
+                            <div>
+                                <strong>Team Alpha</strong>
+                                <div style="font-size: 0.9rem; color: var(--gray-text);">Spring Cup</div>
+                            </div>
+                        </div>
+                        <div class="score" style="color: var(--accent-red);">Lost</div>
+                        <div class="team">
+                            <div class="team-logo" style="background: #0099ff;"></div>
+                            <div>
+                                <strong>Team Delta</strong>
+                                <div style="font-size: 0.9rem; color: var(--gray-text);">Score: 11-13</div>
+                            </div>
+                        </div>
+                        <div style="text-align: center;">
+                            <a href="match-details.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">View Match</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Stats -->
+                <h2 class="section-title">Team Statistics</h2>
+                <div style="background: rgba(255, 255, 255, 0.05); border-radius: 15px; padding: 2rem; margin-bottom: 4rem;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--primary-color);">78.9%</div>
+                            <div style="color: var(--gray-text); margin-top: 0.5rem;">Win Rate</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--secondary-color);">1.39</div>
+                            <div style="color: var(--gray-text); margin-top: 0.5rem;">Average K/D</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--accent-red);">60.2%</div>
+                            <div style="color: var(--gray-text); margin-top: 0.5rem;">Average Headshot %</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--accent-purple);">57</div>
+                            <div style="color: var(--gray-text); margin-top: 0.5rem;">Total Matches</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="teams.html">Teams</a></li>
+                        <li><a href="players.html">Players</a></li>
+                        <li><a href="leaderboard.html">Leaderboard</a></li>
+                        <li><a href="match-schedule.html">Match Schedule</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 eSports Portal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-top" onclick="scrollToTop()" style="display: none; position: fixed; bottom: 30px; right: 30px; background: var(--primary-color); color: var(--darker-bg); border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 1.5rem; cursor: pointer; z-index: 999; box-shadow: var(--shadow);">↑</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

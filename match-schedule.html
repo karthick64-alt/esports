@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Schedule - eSports Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">🎮 eSports Portal</a>
+                <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tournaments.html">Tournaments</a></li>
+                        <li><a href="match-schedule.html" style="color: var(--primary-color);">Schedule</a></li>
+                        <li><a href="teams.html">Teams</a></li>
+                        <li><a href="streaming.html">Streams</a></li>
+                        <li><a href="login.html" class="btn btn-secondary">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Schedule Hero -->
+    <section class="hero" style="min-height: 50vh;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Match Schedule</h1>
+                <p>Upcoming matches and tournament events</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Content -->
+    <section class="section">
+        <div class="container">
+            <div style="max-width: 1200px; margin: 0 auto;">
+                <!-- Today's Matches -->
+                <h2 class="section-title">Today's Matches</h2>
+                <div class="match-results" style="margin-bottom: 4rem;">
+                    <div class="match-item" style="border-left: 4px solid var(--accent-red);">
+                        <div style="text-align: center; min-width: 150px;">
+                            <strong>March 15, 2024</strong>
+                            <div style="font-size: 0.9rem; color: var(--gray-text);">6:00 PM EST</div>
+                            <span class="badge badge-danger" style="margin-top: 0.5rem;">LIVE</span>
+                        </div>
+                        <div class="team">
+                            <div class="team-logo" style="background: #667eea;"></div>
+                            <div>
+                                <strong>Team Alpha</strong>
+                                <div style="font-size: 0.9rem; color: var(--gray-text);">Valorant Championship</div>
+                            </div>
+                        </div>
+                        <div class="score" style="color: var(--accent-red);">VS</div>
+                        <div class="team">
+                            <div class="team-logo" style="background: #764ba2;"></div>
+                            <div>
+                                <strong>Team Beta</strong>
+                                <div style="font-size: 0.9rem; color: var(--gray-text);">Playoffs - Semifinals</div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="match-details.html" class="btn btn-tournament">Watch Live</a>
+                        </div>
+                    </div>
+                    <div class="match-item">
+                        <div style="text-align: center; min-width: 150px;">
+                            <strong>March 15, 2024</strong>
+                            <div style="font-size: 0.9rem; color: var(--gray-text);">8:00 PM EST</div>
+                            <span class="badge badge-primary" style="margin-top: 0.5rem;">Upcoming</span>
+                        </div>
+                        <div class="team">
+                            <div class="team-logo" style="background: #ff3366;"></div>
+                            <div>
+                                <strong>Team Gamma</strong>
+                                <div style="font-size: 0.9rem; color: var(--gray-text);">CS2 Pro League</div>
+                            </div>
+                        </div>
+                        <div class="score">VS</div>
+                        <div class="team">
+                            <div class="team-logo" style="background: #0099ff;"></div>
+                            <div>
+                                <strong>Team Delta</strong>
+                                <div style="font-size: 0.9rem; color: var(--gray-text);">Group Stage</div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="match-details.html" class="btn btn-primary">View Match</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upcoming Matches -->
+                <h2 class="section-title">Upcoming Matches</h2>
+                <div class="match-results" style="margin-bottom: 4rem;">
+                    <div class="match-item">
+                        <div style="text-align: center; min-width: 150px;">
+                            <strong>March 16, 2024</strong>
+                            <div style="font-size: 0.9rem; color: var(--gray-text);">2:00 PM EST</div>
+                            <span class="badge badge-primary" style="margin-top: 0.5rem;">Scheduled</span>
+                        </div>
+                        <div class="team">
+                            <div class="team-logo" style="background: #00ff88;"></div>
+                            <div>
+                                <strong>Team Echo</strong>
+                                <div style="font-size: 0.9rem; color: var(--gray-text);">League of Legends Masters</div>
+                            </div>
+                        </div>
+                        <div class="score">VS</div>
+                        <div class="team">
+                            <div class="team-logo" style="background: #9d4edd;"></div>
+                            <div>
+                                <strong>Team Foxtrot</strong>
+                                <div style="font-size: 0.9rem; color: var(--gray-text);">Quarterfinals</div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="match-details.html" class="btn btn-primary">View Match</a>
+                        </div>
+                    </div>
+                    <div class="match-item">
+                        <div style="text-align: center; min-width: 150px;">
+                            <strong>March 17, 2024</strong>
+                            <div style="font-size: 0.9rem; color: var(--gray-text);">4:00 PM EST</div>
+                            <span class="badge badge-primary" style="margin-top: 0.5rem;">Scheduled</span>
+                        </div>
+                        <div class="team">
+                            <div class="team-logo" style="background: #667eea;"></div>
+                            <div>
+                                <strong>Team Alpha</strong>
+                                <div style="font-size: 0.9rem; color: var(--gray-text);">Valorant Championship</div>
+                            </div>
+                        </div>
+                        <div class="score">VS</div>
+                        <div class="team">
+                            <div class="team-logo" style="background: #ff3366;"></div>
+                            <div>
+                                <strong>Team Gamma</strong>
+                                <div style="font-size: 0.9rem; color: var(--gray-text);">Finals</div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="match-details.html" class="btn btn-primary">View Match</a>
+                        </div>
+                    </div>
+                    <div class="match-item">
+                        <div style="text-align: center; min-width: 150px;">
+                            <strong>March 20, 2024</strong>
+                            <div style="font-size: 0.9rem; color: var(--gray-text);">10:00 AM EST</div>
+                            <span class="badge badge-secondary" style="margin-top: 0.5rem;">Qualifiers</span>
+                        </div>
+                        <div class="team">
+                            <div class="team-logo" style="background: #764ba2;"></div>
+                            <div>
+                                <strong>TBD</strong>
+                                <div style="font-size: 0.9rem; color: var(--gray-text);">Spring Championship</div>
+                            </div>
+                        </div>
+                        <div class="score">VS</div>
+                        <div class="team">
+                            <div class="team-logo" style="background: #0099ff;"></div>
+                            <div>
+                                <strong>TBD</strong>
+                                <div style="font-size: 0.9rem; color: var(--gray-text);">Round 1</div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="match-details.html" class="btn btn-secondary">View Match</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Calendar View -->
+                <h2 class="section-title">Calendar View</h2>
+                <div style="background: rgba(255, 255, 255, 0.05); border-radius: 15px; padding: 2rem;">
+                    <div style="text-align: center; padding: 3rem; border: 2px dashed var(--primary-color); border-radius: 10px;">
+                        <p style="color: var(--gray-text); margin-bottom: 1rem;">Interactive calendar view coming soon</p>
+                        <p style="color: var(--gray-text);">Browse matches by date and tournament</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="match-schedule.html">Schedule</a></li>
+                        <li><a href="tournaments.html">Tournaments</a></li>
+                        <li><a href="streaming.html">Streams</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 eSports Portal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-top" onclick="scrollToTop()" style="display: none; position: fixed; bottom: 30px; right: 30px; background: var(--primary-color); color: var(--darker-bg); border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 1.5rem; cursor: pointer; z-index: 999; box-shadow: var(--shadow);">↑</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

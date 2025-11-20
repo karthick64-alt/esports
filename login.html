@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - eSports Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">🎮 eSports Portal</a>
+                <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tournaments.html">Tournaments</a></li>
+                        <li><a href="blog.html">News</a></li>
+                        <li><a href="login.html" style="color: var(--primary-color);">Login</a></li>
+                        <li><a href="register.html" class="btn btn-secondary">Register</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Login Section -->
+    <section class="section" style="padding-top: 5rem; padding-bottom: 5rem;">
+        <div class="container">
+            <div style="max-width: 500px; margin: 0 auto;">
+                <div style="text-align: center; margin-bottom: 3rem;">
+                    <h1 style="color: var(--primary-color); margin-bottom: 0.5rem;">Welcome Back</h1>
+                    <p style="color: var(--gray-text);">Login to your eSports Portal account</p>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.05); border-radius: 15px; padding: 3rem; border: 1px solid rgba(0, 255, 136, 0.2);">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password *</label>
+                            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                            <label style="display: flex; align-items: center; gap: 0.5rem; color: var(--gray-text); font-weight: normal; cursor: pointer;">
+                                <input type="checkbox" style="width: auto;">
+                                <span>Remember me</span>
+                            </label>
+                            <a href="#" style="color: var(--primary-color); text-decoration: none;">Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem; font-size: 1.1rem;">Login</button>
+                    </form>
+
+                    <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+                        <p style="color: var(--gray-text); margin-bottom: 1rem;">Don't have an account?</p>
+                        <a href="register.html" class="btn btn-secondary" style="width: 100%;">Create Account</a>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+                        <p style="color: var(--gray-text); margin-bottom: 1rem;">Or login with</p>
+                        <div style="display: flex; gap: 1rem; justify-content: center;">
+                            <a href="#" class="btn btn-secondary" style="flex: 1;">Google</a>
+                            <a href="#" class="btn btn-secondary" style="flex: 1;">Discord</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tournaments.html">Tournaments</a></li>
+                        <li><a href="blog.html">News</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 eSports Portal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

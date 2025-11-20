@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Updates - eSports Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">🎮 eSports Portal</a>
+                <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="tournaments.html">Tournaments</a></li>
+                        <li><a href="blog.html" style="color: var(--primary-color);">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html" class="btn btn-secondary">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Hero -->
+    <section class="hero" style="min-height: 40vh;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>News & Updates</h1>
+                <p>Stay updated with the latest eSports news, match reports, and pro tips</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Bar & Category Filters -->
+    <section class="section" style="padding-top: 2rem; padding-bottom: 2rem; background: rgba(0, 255, 136, 0.05);">
+        <div class="container">
+            <div style="display: flex; gap: 2rem; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+                <div style="flex: 1; min-width: 300px;">
+                    <input type="text" id="search-input" placeholder="Search articles..." style="width: 100%; padding: 0.8rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(0, 255, 136, 0.3); border-radius: 5px; color: white;">
+                </div>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="blog.html" class="btn btn-primary">All</a>
+                    <a href="blog.html?category=tournaments" class="btn btn-secondary">Tournaments</a>
+                    <a href="blog.html?category=games" class="btn btn-secondary">Games</a>
+                    <a href="blog.html?category=updates" class="btn btn-secondary">Updates</a>
+                    <a href="blog.html?category=pro-tips" class="btn btn-secondary">Pro Tips</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem;">
+                <!-- Main Blog Grid -->
+                <div>
+                    <div class="blog-grid" style="grid-template-columns: 1fr;">
+                        <div class="blog-card" data-searchable>
+                            <img src="https://via.placeholder.com/800x400/667eea/ffffff?text=Championship+Finals+Schedule+Announced" alt="News">
+                            <div class="blog-card-content">
+                                <div class="blog-meta">March 10, 2024 | Tournament News</div>
+                                <h2>Championship Finals Schedule Announced</h2>
+                                <p style="color: var(--gray-text); margin: 1rem 0;">The highly anticipated schedule for the 2024 Championship Finals has been released. Teams from around the globe will compete over two weeks of intense matches...</p>
+                                <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                                    <span class="badge badge-primary">Tournaments</span>
+                                    <span class="badge badge-secondary">Valorant</span>
+                                </div>
+                                <a href="blog-details.html" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+                            </div>
+                        </div>
+                        <div class="blog-card" data-searchable>
+                            <img src="https://via.placeholder.com/800x400/764ba2/ffffff?text=5+Essential+Strategies+for+Competitive+Play" alt="News">
+                            <div class="blog-card-content">
+                                <div class="blog-meta">March 8, 2024 | Pro Tips</div>
+                                <h2>5 Essential Strategies for Competitive Play</h2>
+                                <p style="color: var(--gray-text); margin: 1rem 0;">Learn from the pros with these game-changing strategies that will elevate your competitive gameplay. Master positioning, timing, and team coordination...</p>
+                                <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                                    <span class="badge badge-primary">Pro Tips</span>
+                                    <span class="badge badge-secondary">Strategy</span>
+                                </div>
+                                <a href="blog-details.html" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+                            </div>
+                        </div>
+                        <div class="blog-card" data-searchable>
+                            <img src="https://via.placeholder.com/800x400/ff3366/ffffff?text=Team+Alpha+Dominates+Regional+Qualifiers" alt="News">
+                            <div class="blog-card-content">
+                                <div class="blog-meta">March 5, 2024 | Match Report</div>
+                                <h2>Team Alpha Dominates Regional Qualifiers</h2>
+                                <p style="color: var(--gray-text); margin: 1rem 0;">A comprehensive breakdown of the regional qualifier matches where Team Alpha showed exceptional performance, winning all their matches convincingly...</p>
+                                <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                                    <span class="badge badge-primary">Match Report</span>
+                                    <span class="badge badge-danger">CS2</span>
+                                </div>
+                                <a href="blog-details.html" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+                            </div>
+                        </div>
+                        <div class="blog-card" data-searchable>
+                            <img src="https://via.placeholder.com/800x400/0099ff/ffffff?text=New+Meta+Analysis+League+of+Legends" alt="News">
+                            <div class="blog-card-content">
+                                <div class="blog-meta">March 3, 2024 | Games</div>
+                                <h2>New Meta Analysis: League of Legends</h2>
+                                <p style="color: var(--gray-text); margin: 1rem 0;">The latest patch has brought significant changes to the meta. We analyze how professional teams are adapting and which champions are rising in popularity...</p>
+                                <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                                    <span class="badge badge-primary">Games</span>
+                                    <span class="badge badge-secondary">League of Legends</span>
+                                </div>
+                                <a href="blog-details.html" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+                            </div>
+                        </div>
+                        <div class="blog-card" data-searchable>
+                            <img src="https://via.placeholder.com/800x400/00ff88/000000?text=eSports+Portal+Platform+Updates" alt="News">
+                            <div class="blog-card-content">
+                                <div class="blog-meta">March 1, 2024 | Updates</div>
+                                <h2>eSports Portal Platform Updates</h2>
+                                <p style="color: var(--gray-text); margin: 1rem 0;">We're excited to announce new features including enhanced tournament brackets, improved streaming quality, and new community tools...</p>
+                                <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                                    <span class="badge badge-primary">Updates</span>
+                                    <span class="badge badge-secondary">Platform</span>
+                                </div>
+                                <a href="blog-details.html" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+                            </div>
+                        </div>
+                        <div class="blog-card" data-searchable>
+                            <img src="https://via.placeholder.com/800x400/9d4edd/ffffff?text=Training+Tips+from+Pro+Coaches" alt="News">
+                            <div class="blog-card-content">
+                                <div class="blog-meta">February 28, 2024 | Pro Tips</div>
+                                <h2>Training Tips from Pro Coaches</h2>
+                                <p style="color: var(--gray-text); margin: 1rem 0;">Professional coaches share their insights on effective training routines, warm-up exercises, and mental preparation techniques for competitive gaming...</p>
+                                <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                                    <span class="badge badge-primary">Pro Tips</span>
+                                    <span class="badge badge-secondary">Training</span>
+                                </div>
+                                <a href="blog-details.html" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 3rem;">
+                        <a href="#" class="btn btn-secondary">Previous</a>
+                        <a href="#" class="btn btn-primary">1</a>
+                        <a href="#" class="btn btn-secondary">2</a>
+                        <a href="#" class="btn btn-secondary">3</a>
+                        <a href="#" class="btn btn-secondary">Next</a>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <aside>
+                    <!-- Recent Articles -->
+                    <div style="background: rgba(255, 255, 255, 0.05); border-radius: 15px; padding: 2rem; margin-bottom: 2rem;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 1.5rem;">Recent Articles</h3>
+                        <div style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                            <a href="blog-details.html" style="color: white; text-decoration: none;">
+                                <strong>Championship Finals Schedule Announced</strong>
+                            </a>
+                            <div style="font-size: 0.9rem; color: var(--gray-text); margin-top: 0.5rem;">March 10, 2024</div>
+                        </div>
+                        <div style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                            <a href="blog-details.html" style="color: white; text-decoration: none;">
+                                <strong>5 Essential Strategies for Competitive Play</strong>
+                            </a>
+                            <div style="font-size: 0.9rem; color: var(--gray-text); margin-top: 0.5rem;">March 8, 2024</div>
+                        </div>
+                        <div style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                            <a href="blog-details.html" style="color: white; text-decoration: none;">
+                                <strong>Team Alpha Dominates Regional Qualifiers</strong>
+                            </a>
+                            <div style="font-size: 0.9rem; color: var(--gray-text); margin-top: 0.5rem;">March 5, 2024</div>
+                        </div>
+                        <div>
+                            <a href="blog-details.html" style="color: white; text-decoration: none;">
+                                <strong>New Meta Analysis: League of Legends</strong>
+                            </a>
+                            <div style="font-size: 0.9rem; color: var(--gray-text); margin-top: 0.5rem;">March 3, 2024</div>
+                        </div>
+                    </div>
+
+                    <!-- Tags -->
+                    <div style="background: rgba(255, 255, 255, 0.05); border-radius: 15px; padding: 2rem; margin-bottom: 2rem;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 1.5rem;">Tags</h3>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                            <span class="badge badge-primary">Tournaments</span>
+                            <span class="badge badge-secondary">Valorant</span>
+                            <span class="badge badge-danger">CS2</span>
+                            <span class="badge badge-primary">Pro Tips</span>
+                            <span class="badge badge-secondary">League of Legends</span>
+                            <span class="badge badge-primary">Match Report</span>
+                            <span class="badge badge-secondary">Updates</span>
+                            <span class="badge badge-primary">Strategy</span>
+                            <span class="badge badge-secondary">Training</span>
+                        </div>
+                    </div>
+
+                    <!-- Trending Topics -->
+                    <div style="background: rgba(255, 255, 255, 0.05); border-radius: 15px; padding: 2rem;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 1.5rem;">Trending Topics</h3>
+                        <div style="margin-bottom: 1rem;">
+                            <a href="blog.html?category=tournaments" style="color: var(--gray-text); text-decoration: none;"># Championship Finals</a>
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <a href="blog.html?category=pro-tips" style="color: var(--gray-text); text-decoration: none;"># Competitive Strategy</a>
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <a href="blog.html?category=games" style="color: var(--gray-text); text-decoration: none;"># Meta Analysis</a>
+                        </div>
+                        <div>
+                            <a href="blog.html?category=updates" style="color: var(--gray-text); text-decoration: none;"># Platform Updates</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">News</a></li>
+                        <li><a href="tournaments.html">Tournaments</a></li>
+                        <li><a href="teams.html">Teams</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="#" title="Discord">💬</a>
+                        <a href="#" title="Twitch">📺</a>
+                        <a href="#" title="YouTube">▶️</a>
+                        <a href="#" title="Instagram">📷</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 eSports Portal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-top" onclick="scrollToTop()" style="display: none; position: fixed; bottom: 30px; right: 30px; background: var(--primary-color); color: var(--darker-bg); border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 1.5rem; cursor: pointer; z-index: 999; box-shadow: var(--shadow);">↑</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

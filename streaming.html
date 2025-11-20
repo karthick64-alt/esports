@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Streaming - eSports Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">🎮 eSports Portal</a>
+                <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tournaments.html">Tournaments</a></li>
+                        <li><a href="match-schedule.html">Schedule</a></li>
+                        <li><a href="streaming.html" style="color: var(--primary-color);">Streams</a></li>
+                        <li><a href="blog.html">News</a></li>
+                        <li><a href="login.html" class="btn btn-secondary">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Streaming Hero -->
+    <section class="hero" style="min-height: 50vh;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Live Streaming</h1>
+                <p>Watch live eSports tournaments and matches</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Stream -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Live Stream</h2>
+            <div class="stream-section" style="margin-bottom: 4rem;">
+                <div class="stream-embed">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div style="padding: 1.5rem;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Team Alpha vs Team Beta</h3>
+                    <p style="color: var(--gray-text); margin-bottom: 1rem;">Valorant Championship | Playoffs - Semifinals</p>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <span class="badge badge-danger">LIVE</span>
+                        <span class="badge badge-primary">12,450 viewers</span>
+                        <span class="badge badge-secondary">Valorant</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Live Streams -->
+            <h2 class="section-title">Other Live Streams</h2>
+            <div class="blog-grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+                <div class="blog-card">
+                    <div class="stream-embed" style="padding-bottom: 56.25%;">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3>CS2 Pro League</h3>
+                        <p style="color: var(--gray-text);">Team Gamma vs Team Delta</p>
+                        <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                            <span class="badge badge-danger">LIVE</span>
+                            <span class="badge badge-secondary">8,920 viewers</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="stream-embed" style="padding-bottom: 56.25%;">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3>League of Legends Masters</h3>
+                        <p style="color: var(--gray-text);">Team Echo vs Team Foxtrot</p>
+                        <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                            <span class="badge badge-danger">LIVE</span>
+                            <span class="badge badge-secondary">15,230 viewers</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="stream-embed" style="padding-bottom: 56.25%;">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3>Dota 2 Championship</h3>
+                        <p style="color: var(--gray-text);">Team Golf vs Team Hotel</p>
+                        <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                            <span class="badge badge-danger">LIVE</span>
+                            <span class="badge badge-secondary">22,100 viewers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stream Platform Links -->
+            <div style="background: rgba(255, 255, 255, 0.05); border-radius: 15px; padding: 3rem; margin-top: 4rem; text-align: center;">
+                <h2 style="color: var(--primary-color); margin-bottom: 2rem;">Watch on Your Favorite Platform</h2>
+                <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                    <a href="#" class="btn btn-tournament" style="display: flex; align-items: center; gap: 0.5rem;">
+                        <span>📺</span> Twitch
+                    </a>
+                    <a href="#" class="btn btn-tournament" style="display: flex; align-items: center; gap: 0.5rem;">
+                        <span>▶️</span> YouTube
+                    </a>
+                    <a href="#" class="btn btn-tournament" style="display: flex; align-items: center; gap: 0.5rem;">
+                        <span>📱</span> Mobile App
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="streaming.html">Streams</a></li>
+                        <li><a href="match-schedule.html">Schedule</a></li>
+                        <li><a href="tournaments.html">Tournaments</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 eSports Portal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-top" onclick="scrollToTop()" style="display: none; position: fixed; bottom: 30px; right: 30px; background: var(--primary-color); color: var(--darker-bg); border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 1.5rem; cursor: pointer; z-index: 999; box-shadow: var(--shadow);">↑</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
